@@ -2,6 +2,20 @@ version: '3.5'
 
 services:
 
+#  multimodal-search-api:
+#    build:
+#      context: ./projects/multimodal-search-api
+#      dockerfile: Dockerfile
+#    container_name: multimodal-search-api
+#    ports:
+#      - "5001:5001"
+#    environment:
+#      - FLASK_ENV=production
+#      - MILVUS_HOST=standalone
+#      - MILVUS_PORT=19530
+#    depends_on:
+#      - standalone
+
   postgres:
     image: postgres:14
     container_name: postgres

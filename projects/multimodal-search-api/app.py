@@ -1,9 +1,9 @@
+import os
 from flask import Flask, request, jsonify
 from pymilvus import connections, Collection
 from transformers import CLIPProcessor, CLIPModel
 from PIL import Image
 import torch
-import os
 import logging
 
 # Configurar logging
@@ -12,10 +12,14 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 # Configurar Flask
 app = Flask(__name__)
 
+# Variáveis de ambiente com valores padrão
+MILVUS_HOST = os.getenv("MILVUS_HOST", "localhost")
+MILVUS_PORT = os.getenv("MILVUS_PORT", "19530")
+
 # Conectar ao Milvus
 try:
-    logging.info("Conectando ao Milvus...")
-    connections.connect(host="localhost", port="19530")
+    logging.info(f"Conectando ao Milvus em {MILVUS_HOST}:{MILVUS_PORT}...")
+    connections.connect(host=MILVUS_HOST, port=MILVUS_PORT)
     collection = Collection("multimodal_product_catalog")
     logging.info("Conexão com Milvus bem-sucedida.")
 
@@ -99,6 +103,51 @@ def search_by_image():
     except Exception as e:
         logging.error(f"Erro ao buscar por imagem: {e}")
         return jsonify({"error": str(e)}), 500
+
+# Endpoint para buscar por texto e imagem
+@app.route("/search/multimodal", methods=["POST"])
+def search_by_text_and_image():
+    try:
+        query_text = request.form.get("text")
+        image_file = request.files.get("image")
+
+        if not query_text and not image_file:
+            return jsonify({"error": "É necessário enviar pelo menos texto ou imagem para busca."}), 400
+
+        # Gerar embedding de texto, se fornecido
+        if query_text:
+            text_inputs = clip_processor(text=query_text, return_tensors="pt", padding=True)
+            with torch.no_grad():
+                text_embedding = clip_model.get_text_features(**text_inputs).squeeze().numpy()
+        else:
+            text_embedding = None
+
+        # Gerar embedding de imagem, se fornecida
+        if image_file:
+            image = Image.open(image_file).convert("RGB")
+            image_inputs = clip_processor(images=image, return_tensors="pt")
+            with torch.no_grad():
+                image_embedding = clip_model.get_image_features(**image_inputs).squeeze().numpy()
+        else:
+            image_embedding = None
+
+        # Combinar embeddings
+        if text_embedding is not None and image_embedding is not None:
+            combined_embedding = (text_embedding + image_embedding) / 2
+        elif text_embedding is not None:
+            combined_embedding = text_embedding
+        elif image_embedding is not None:
+            combined_embedding = image_embedding
+        else:
+            return jsonify({"error": "Erro ao gerar embeddings."}), 500
+
+        # Buscar no Milvus
+        results = search_in_milvus(combined_embedding)
+        return jsonify(results)
+    except Exception as e:
+        logging.error(f"Erro ao buscar por texto e imagem: {e}")
+        return jsonify({"error": str(e)}), 500
+
 
 # Executar a aplicação Flask
 if __name__ == "__main__":

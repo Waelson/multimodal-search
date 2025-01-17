@@ -1,0 +1,5 @@
+Flask==2.3.2
+pymilvus==2.3.0
+transformers==4.31.0
+torch==2.0.1
+Pillow==10.0.0
