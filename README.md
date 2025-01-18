@@ -2,25 +2,6 @@
 
 Esse repositório contém a implementação de um sistema de busca multimodal que simula um mecânismo de busca de produtos por texto e/ou imagem.  
 
-## Contexto
-
-### O que é busca multimodal?
-São buscas que combinam diferentes tipos de dados (ou "modalidades") para encontrar resultados. Por exemplo, você pode buscar com uma imagem e um texto ao mesmo tempo, ou usar áudio e vídeo como entrada para encontrar conteúdos relacionados.
-
-### Que tipos de problema resolve?
-
-1. **E-Commerce**
-    - **Busca de produtos por imagem e texto:** 
-      - O cliente pode carregar a foto de um produto e adicionar um texto como "sapato vermelho tamanho 40", e o sistema encontrará itens que correspondem à imagem e à descrição.
-    - **Recomendações personalizadas:**
-      - Sugerir produtos relacionados a uma combinação de fotos enviadas e histórico de pesquisa textual.
-2. **Saúde**
-    - **Busca por diagnósticos médicos:**
-      - Médicos podem combinar imagens de exames (como raios-X ou ressonâncias) com descrições textuais de sintomas para encontrar diagnósticos ou casos similares.
-3. **Educacional**
-    - **Busca em conteúdos educacionais:**
-      - Estudantes podem combinar texto (ex.: "Teoria da Relatividade") com gráficos ou diagramas, encontrando explicações que relacionam ambas as modalidades.
-
 ## Arquitetura da Solução
 ![Architecture](documentation/architecture-embedding.png)
 
@@ -46,6 +27,27 @@ São buscas que combinam diferentes tipos de dados (ou "modalidades") para encon
    - Postgres
 4. Dataset
    - E-commerce Product Images (disponível no Kaggle em: https://www.kaggle.com/datasets/vikashrajluhaniwal/fashion-images)
+
+
+## Teoria
+
+### O que é busca multimodal?
+São buscas que combinam diferentes tipos de dados (ou "modalidades") para encontrar resultados. Por exemplo, você pode buscar com uma imagem e um texto ao mesmo tempo, ou usar áudio e vídeo como entrada para encontrar conteúdos relacionados.
+
+### Que tipos de problema resolve?
+
+1. **E-Commerce**
+   - **Busca de produtos por imagem e texto:**
+      - O cliente pode carregar a foto de um produto e adicionar um texto como "sapato vermelho tamanho 40", e o sistema encontrará itens que correspondem à imagem e à descrição.
+   - **Recomendações personalizadas:**
+      - Sugerir produtos relacionados a uma combinação de fotos enviadas e histórico de pesquisa textual.
+2. **Saúde**
+   - **Busca por diagnósticos médicos:**
+      - Médicos podem combinar imagens de exames (como raios-X ou ressonâncias) com descrições textuais de sintomas para encontrar diagnósticos ou casos similares.
+3. **Educacional**
+   - **Busca em conteúdos educacionais:**
+      - Estudantes podem combinar texto (ex.: "Teoria da Relatividade") com gráficos ou diagramas, encontrando explicações que relacionam ambas as modalidades.
+
 
 ## Como o Vector Database pode nos ajudar?
 
