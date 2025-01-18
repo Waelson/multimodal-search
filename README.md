@@ -2,7 +2,7 @@
 
 ![technology Python](https://img.shields.io/badge/technology-Python-blue.svg)  ![technology JavaScript](https://img.shields.io/badge/technology-JavaScript-blue.svg) ![technology Postgres](https://img.shields.io/badge/technology-Postgres-green.svg) ![technology Milvus](https://img.shields.io/badge/technology-Milvus-green.svg) ![technology Flask](https://img.shields.io/badge/technology-Flask-orange.svg) ![technology PyTorch](https://img.shields.io/badge/technology-PyTorch-orange.svg) ![technology Transformer](https://img.shields.io/badge/technology-Transformer-orange.svg) ![technology React](https://img.shields.io/badge/technology-React-orange.svg)
 
-Este repositório apresenta a implementação de um **sistema de busca multimodal**, projetado para simular um mecanismo avançado de busca de produtos utilizando texto, imagens, ou a combinação de ambos. O sistema permite realizar consultas eficientes e precisas, proporcionando uma experiência de busca rica e interativa.  
+Este repositório contem a implementação de um **sistema de busca multimodal**, projetado para simular um mecanismo avançado de busca de produtos utilizando texto, imagens, ou a combinação de ambos. O sistema permite realizar consultas eficientes, proporcionando uma experiência mais interativa.  
 
 ## Arquitetura da Solução
 ![Architecture](documentation/architecture-embedding.png)
