@@ -43,7 +43,7 @@ docker-compose up --build
 
 3. **Indexação do dataset e imagens**
 
-```bash
+```python
 cd projects/multimodal-indexer
 python app.py
 ```
