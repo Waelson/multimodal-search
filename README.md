@@ -1,17 +1,39 @@
 # Sistema de Busca Multimodal
 
-Esse repositório contém a implementação de um sistema de busca multimodal que simula um mecânismo de busca de produtos por texto e/ou imagem.  
+Este repositório apresenta a implementação de um **sistema de busca multimodal**, projetado para simular um mecanismo avançado de busca de produtos utilizando texto, imagens, ou a combinação de ambos. O sistema permite realizar consultas eficientes e precisas, proporcionando uma experiência de busca rica e interativa.  
 
 ## Arquitetura da Solução
 ![Architecture](documentation/architecture-embedding.png)
 
-### Componentes
+### Componentes da Arquitetura
 | **Componente**        | **Descrição**                                                    |
 |-----------------------|------------------------------------------------------------------|
 | product-search-web    | Interface usada por usuários de e-commerce consultar os produtos |
 | product-search-api    | Backend responsável por buscar produtos                          |
 | multimodal-search-api | TODO                                                             |
 | multimodal-indexer    | TODO                                                             |
+
+### Executando
+
+A aplicação está configurada para ser executada com Docker Compose. Siga os seguintes passos:
+
+1. **Clone o repositório**
+
+```bash
+git clone https://github.com/Waelson/multimodal-search.git
+cd multimodal-search
+```
+
+2. **Suba toda a stack**
+
+```bash
+docker-compose up --build
+```
+
+3. **Acessando a aplicação**
+   - Digite a URL http://localhost:3001/ no browser
+   - Clique no ícone da `câmera` para selecionar uma imagem. Lembre-se: a base de dados contém imagens de tênis e calçados masculino e feminino, além de roupas infantis masculinas e femininas. Portanto, ao realizar a consulta selecione imagens nessas categorias. 
+
 
 ### Ferramentas utilizadas
 1. **Linguagem** 
