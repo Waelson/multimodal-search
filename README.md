@@ -35,20 +35,13 @@ docker-compose up --build
    - Clique no ícone da `câmera` para selecionar uma imagem. Lembre-se: a base de dados contém imagens de tênis e calçados masculino e feminino, além de roupas infantis masculinas e femininas. Portanto, ao realizar a consulta selecione imagens nessas categorias. 
 
 
-### Ferramentas utilizadas
-1. **Linguagem** 
-   - Python
-2. **Bibliotecas**
-   - Flask
-   - Torch
-   - Transformer
-   - Pillow
-   - Pymilvus
-3. **Banco de Dados**
-   - Milvus (Vector Database)
-   - Postgres
-4. Dataset
-   - E-commerce Product Images (disponível no Kaggle em: https://www.kaggle.com/datasets/vikashrajluhaniwal/fashion-images)
+### Tecnologias
+| **Categoria**         | **Ferramenta/Descrição**                                                                 |
+|------------------------|------------------------------------------------------------------------------------------|
+| **Linguagem**          | Python                                                                                  |
+| **Bibliotecas**        | Flask, Torch, Transformers, Pillow, Pymilvus                                            |
+| **Banco de Dados**     | Milvus (Vector Database), Postgres                                                      |
+| **Dataset**            | [E-commerce Product Images](https://www.kaggle.com/datasets/vikashrajluhaniwal/fashion-images) (disponível no Kaggle) |
 
 
 ## Teoria
