@@ -16,11 +16,11 @@ Este repositório contem a implementação de um **sistema de busca multimodal**
 | multimodal-indexer    | TODO                                                             |
 
 ### Tecnologias Utilizadas
-| **Categoria**         | **Ferramenta/Descrição**                                                                 |
-|------------------------|------------------------------------------------------------------------------------------|
-| **Linguagem**          | Python                                                                                  |
-| **Bibliotecas**        | Flask, Torch, Transformers, Pillow, Pymilvus                                            |
-| **Banco de Dados**     | Milvus (Vector Database), Postgres                                                      |
+| **Categoria**         | **Ferramenta/Descrição**                                                                                              |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **Linguagem**          | Python, Java Script                                                                                                   |
+| **Bibliotecas**        | Flask, Torch, Transformers, Pillow, Pymilvus, React                                                                   |
+| **Banco de Dados**     | [Milvus (Vector Database)](https://milvus.io/), Postgres                                                                                |
 | **Dataset**            | [E-commerce Product Images](https://www.kaggle.com/datasets/vikashrajluhaniwal/fashion-images) (disponível no Kaggle) |
 
 
