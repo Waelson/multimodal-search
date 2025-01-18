@@ -43,14 +43,14 @@ docker-compose up --build
 
 3. **Indexação do dataset e imagens**
 
-```python
+```bash
 cd projects/multimodal-indexer
 python app.py
 ```
 
 4. **Acessando a aplicação**
-   - Digite a URL http://localhost:3001/ no browser
-   - Clique no ícone da `câmera` para selecionar uma imagem. Lembre-se: a base de dados contém imagens de tênis e calçados masculino e feminino, além de roupas infantis masculinas e femininas. Portanto, ao realizar a consulta selecione imagens nessas categorias. 
+- Digite a URL http://localhost:3001/ no browser
+- Clique no ícone da `câmera` para selecionar uma imagem. Lembre-se: a base de dados contém imagens de tênis e calçados masculino e feminino, além de roupas infantis masculinas e femininas. Portanto, ao realizar a consulta selecione imagens nessas categorias. 
 
 ## Como a Aplicação se Parece
 
