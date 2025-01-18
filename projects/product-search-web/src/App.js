@@ -258,8 +258,8 @@ const styles = {
     position: "relative",
   },
   resultImage: {
-    width: "200px",
-    height: "200px",
+    width: "180px",
+    height: "180px",
     objectFit: "cover",
     marginBottom: "10px",
     backgroundColor: "#d3d3d3",
