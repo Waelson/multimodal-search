@@ -13,6 +13,15 @@ Este repositório apresenta a implementação de um **sistema de busca multimoda
 | multimodal-search-api | TODO                                                             |
 | multimodal-indexer    | TODO                                                             |
 
+### Tecnologias Utilizadas
+| **Categoria**         | **Ferramenta/Descrição**                                                                 |
+|------------------------|------------------------------------------------------------------------------------------|
+| **Linguagem**          | Python                                                                                  |
+| **Bibliotecas**        | Flask, Torch, Transformers, Pillow, Pymilvus                                            |
+| **Banco de Dados**     | Milvus (Vector Database), Postgres                                                      |
+| **Dataset**            | [E-commerce Product Images](https://www.kaggle.com/datasets/vikashrajluhaniwal/fashion-images) (disponível no Kaggle) |
+
+
 ### Executando
 
 A aplicação está configurada para ser executada com Docker Compose. Siga os seguintes passos:
@@ -35,15 +44,7 @@ docker-compose up --build
    - Clique no ícone da `câmera` para selecionar uma imagem. Lembre-se: a base de dados contém imagens de tênis e calçados masculino e feminino, além de roupas infantis masculinas e femininas. Portanto, ao realizar a consulta selecione imagens nessas categorias. 
 
 
-### Tecnologias
-| **Categoria**         | **Ferramenta/Descrição**                                                                 |
-|------------------------|------------------------------------------------------------------------------------------|
-| **Linguagem**          | Python                                                                                  |
-| **Bibliotecas**        | Flask, Torch, Transformers, Pillow, Pymilvus                                            |
-| **Banco de Dados**     | Milvus (Vector Database), Postgres                                                      |
-| **Dataset**            | [E-commerce Product Images](https://www.kaggle.com/datasets/vikashrajluhaniwal/fashion-images) (disponível no Kaggle) |
-
-
+   
 ## Teoria
 
 ### O que é busca multimodal?
