@@ -54,7 +54,7 @@ try:
             products.append({
                 "id": int(row["ProductId"]),
                 "text": f"{row['Gender']} {row['Category']} {row['SubCategory']} {row['ProductType']} {row['Colour']} {row['Usage']} {row['ProductTitle']}",
-                "image_path": os.path.join("/Users/waelson/Documents/workspace/multimodal-search/data/images", row["Image"])
+                "image_path": os.path.join("../../data/images", row["Image"])
             })
     logging.info(f"{len(products)} produtos carregados do arquivo CSV.")
 except Exception as e:
