@@ -2,7 +2,7 @@
 
 ![technology Python](https://img.shields.io/badge/technology-Python-blue.svg)  ![technology JavaScript](https://img.shields.io/badge/technology-JavaScript-orange.svg) ![technology MachineLearning](https://img.shields.io/badge/technology-MachineLearning-green.svg) 
 
-Este repositório contem a implementação de um **sistema de busca multimodal**, projetado para simular um mecanismo avançado de busca de produtos em um e-commerce fictício utilizando texto, imagens, ou a combinação de ambos. O sistema permite realizar consultas eficientes, proporcionando uma experiência mais interativa.  
+Este repositório contem a implementação de um **sistema de busca multimodal**, projetado para simular um mecanismo avançado de busca de produtos em um e-commerce fictício utilizando texto, imagens, ou a combinação de ambos. O sistema permite realizar consultas eficientes, proporcionando uma experiência mais flexível.  
 
 ## Arquitetura
 ![Architecture](documentation/architecture-embedding.png)
