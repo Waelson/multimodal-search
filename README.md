@@ -4,10 +4,10 @@
 
 Este repositório contem a implementação de um **sistema de busca multimodal**, projetado para simular um mecanismo avançado de busca de produtos em um e-commerce fictício utilizando texto, imagens, ou a combinação de ambos. O sistema permite realizar consultas eficientes, proporcionando uma experiência mais interativa.  
 
-## Arquitetura da Solução
+## Arquitetura
 ![Architecture](documentation/architecture-embedding.png)
 
-### Componentes da Arquitetura
+### Componentes
 | **Componente**        | **Descrição**                                                                                         |
 |-----------------------|-------------------------------------------------------------------------------------------------------|
 | product-search-web    | Interface usada por usuários do e-commerce para consultar os produtos                                 |
@@ -17,7 +17,7 @@ Este repositório contem a implementação de um **sistema de busca multimodal**
 | Postgres              | Armazena todos os dados dos produtos como: nome, URL da image, categoria e outras características     |
 | Milvus                | Armazena o embedding (vetor) de cada produto, juntamente com seu respectivo ID                        |
 
-### Tecnologias Utilizadas
+### Tecnologias
 | **Categoria**         | **Ferramenta/Descrição**                                                                                              |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | **Linguagem**          | Python, Java Script                                                                                                   |
@@ -26,7 +26,7 @@ Este repositório contem a implementação de um **sistema de busca multimodal**
 | **Dataset**            | [E-commerce Product Images](https://www.kaggle.com/datasets/vikashrajluhaniwal/fashion-images) (disponível no Kaggle) |
 
 
-### Instalação e Execução
+### Instalação
 
 A aplicação está configurada para ser executada com Docker Compose. Siga os seguintes passos:
 
@@ -76,7 +76,7 @@ python app.py
 - Digite a URL http://localhost:3001/ no browser
 - Clique no ícone da `câmera` para selecionar uma imagem. Lembre-se: a base de dados contém imagens de tênis e calçados masculino e feminino, além de roupas infantis masculinas e femininas. Portanto, ao realizar a consulta selecione imagens nessas categorias. 
 
-## Como a Aplicação se Parece
+## Interface de Consulta de Produtos
 
 ![Screen](documentation/app-screen.png)
    
