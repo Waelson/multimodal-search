@@ -138,3 +138,9 @@ Eles ajudam a comparar e encontrar semelhanças entre coisas. Por exemplo:
 
 - Mesmo que você descreva uma maçã em palavras diferentes ("uma fruta doce e crocante"), o computador pode entender que você está falando da mesma coisa.
 - No caso de imagens, um embedding pode ajudar a identificar que duas fotos diferentes mostram o mesmo cachorro.
+
+#### Como funciona a busca por similaridade?
+
+A imagem abaixo mostra uma representação matemática de como alguns textos são transformados em `embeddings` (vector) e sua representação em um gráfico 2D.
+
+![Similarity](documentation/similarity.png)
