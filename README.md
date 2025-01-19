@@ -44,8 +44,8 @@ cd multimodal-search
 
 2. **Inicializa a stack**
 > **Atençao:** 
-> - O processo de construção da imagem da aplicação `multimodal-search-api` pode levar MUITO tempo.
-> - O servidor web da aplicação `multimodal-search-api` também leva um tempo para inicializar. Portanto, antes de executar a aplicação certifique-se de que o servidor HTTP já esteja inicializado
+> A construção da imagem da aplicação multimodal-search-api pode ser um processo DEMORADO. Além disso, o servidor web dessa aplicação também leva algum tempo para inicializar. Por isso, antes de executar a aplicação, certifique-se de que o servidor HTTP já foi inicializado corretamente.
+
 ```bash
 docker-compose up --build
 ```
