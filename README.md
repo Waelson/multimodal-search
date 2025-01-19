@@ -79,7 +79,7 @@ python app.py
 - Digite a URL http://localhost:3001/ no browser
 - Clique no ícone da `câmera` para selecionar uma imagem. Lembre-se: a base de dados contém imagens de tênis e calçados masculino e feminino, além de roupas infantis masculinas e femininas. Portanto, ao realizar a consulta selecione imagens nessas categorias. 
 
-## Interface de Consulta de Produtos
+## Interface para Consulta de Produtos
 
 ![Screen](documentation/app-screen.png)
    
