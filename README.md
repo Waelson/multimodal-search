@@ -81,12 +81,16 @@ python app.py
 
 ![Screen](documentation/app-screen.png)
    
-## Teoria
+## 🧠 Teoria
 
-### Busca multimodal: o que é?
+### 💡Busca multimodal
+
+___
+
+#### O que é?
 São buscas que combinam diferentes tipos de dados (ou "modalidades") para encontrar resultados. Por exemplo, você pode buscar com uma imagem e um texto ao mesmo tempo, ou usar áudio e vídeo como entrada para encontrar conteúdos relacionados.
 
-### Quais tipos de problemas ela ajuda a resolver?
+#### Quais problemas ela ajuda a resolver?
 
 1. **E-Commerce**
    - **Busca de produtos por imagem e texto:**
@@ -101,7 +105,9 @@ São buscas que combinam diferentes tipos de dados (ou "modalidades") para encon
       - Estudantes podem combinar texto (ex.: "Teoria da Relatividade") com gráficos ou diagramas, encontrando explicações que relacionam ambas as modalidades.
 
 
-### Vector Database
+### 💡Vector Database
+
+___
 
 #### O que são e para que servem?
 
@@ -112,7 +118,9 @@ Os vetores são armazenados no banco e podem ser consultados com base em similar
 - Distância Euclidiana
 - Distância de Manhattan
 
-### Embeddings 
+### 💡Embeddings 
+
+___
 
 #### O que são?
 
