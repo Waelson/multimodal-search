@@ -141,6 +141,20 @@ Eles ajudam a comparar e encontrar semelhanças entre coisas. Por exemplo:
 
 #### Como funciona a busca por similaridade?
 
-A imagem abaixo mostra uma representação matemática de como alguns textos são transformados em `embeddings` (vector) e sua representação em um gráfico 2D.
+A imagem abaixo mostra uma representação matemática de como alguns textos são transformados em `embeddings` (vetor) e sua representação em um gráfico 2D.
 
 ![Similarity](documentation/similarity.png)
+
+
+**O que acontece quando você busca o termo "person"?**
+
+- Primeiro, o termo "person" é transformado em um vetor de números, chamado de embedding. Por exemplo, o vetor pode ser algo como [3, 4], que representa as características semânticas do termo "person".
+- Esse vetor será comparado com os embeddings já existentes no banco de dados (no caso, os vetores de "man", "child" e "woman").
+
+**Como medir similaridade?**
+
+A similaridade entre os vetores é calculada medindo a "distância" entre eles. As duas maneiras mais comuns são:
+- **Distância Euclidiana**: Imagine os pontos desenhados em um gráfico (como no lado direito da imagem). A distância é medida como se usássemos uma régua entre os pontos.
+- **Produto interno ou cosseno**: Mede o ângulo entre os vetores, indicando o quão próximos estão em "direção" e não apenas em posição.
+
+Quanto menor a distância ou maior a proximidade, mais semelhantes os itens são.
