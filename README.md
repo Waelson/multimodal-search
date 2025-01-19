@@ -28,9 +28,9 @@ Este repositório contem a implementação de um **sistema de busca multimodal**
 
 ## Instalação
 
-A aplicação está configurada para ser executada com Docker Compose. Siga os seguintes passos:
+A aplicação está configurada para ser executada com Docker Compose. Siga os passos logo abaixo, mas assegure-se de ter os pré-requisitos instalados:
 
-Pré-requisitos:
+**Pré-requisitos:**
 - Python 3.11 ou superior
 - Node 20.12 ou superior (para executar projeto localmente)
 
