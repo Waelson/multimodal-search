@@ -34,20 +34,20 @@ Pré-requisitos:
 - Python 3.11 ou superior
 - Node 20.12 ou superior (para executar projeto localmente)
 
-1. **Clone o repositório**
+1. **Clona o repositório**
 
 ```bash
 git clone https://github.com/Waelson/multimodal-search.git
 cd multimodal-search
 ```
 
-2. **Suba toda a stack**
+2. **Inicializa a stack**
 
 ```bash
 docker-compose up --build
 ```
 
-3. **Preparação e Indexação do dataset**
+3. **Prepara a indexação do dataset**
 - Cria um Virtual Environment do Python
 
 ```bash
@@ -72,7 +72,7 @@ cd projects/multimodal-indexer
 python app.py
 ```
 
-4. **Acessando a aplicação**
+4. **Acessa a aplicação**
 - Digite a URL http://localhost:3001/ no browser
 - Clique no ícone da `câmera` para selecionar uma imagem. Lembre-se: a base de dados contém imagens de tênis e calçados masculino e feminino, além de roupas infantis masculinas e femininas. Portanto, ao realizar a consulta selecione imagens nessas categorias. 
 
