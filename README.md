@@ -83,9 +83,9 @@ python app.py
 
 ![Screen](documentation/app-screen.png)
    
-## Ferramenta de Administração do Milvus
+## Attu: Ferramenta de Administração do Milvus
 
-É uma ferramenta completa para administrar o Milvus. Para usá-lo digite no browser a URL http://localhost:8000. Depois é só clicar no botão `Connect`.
+Attu é uma ferramenta completa para administrar o Milvus. Para usá-lo digite no browser a URL http://localhost:8000. Depois é só clicar no botão `Connect`.
 
 ![Attu](documentation/attu_console.png)
 
