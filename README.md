@@ -45,7 +45,7 @@ cd multimodal-search
 docker-compose up --build
 ```
 
-3. **Indexação do dataset e imagens**
+3. **Preparação e Indexação do dataset**
 - Cria um Virtual Environment do Python
 
 ```bash
