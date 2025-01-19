@@ -1,6 +1,6 @@
 # Sistema de Busca Multimodal
 
-![technology Python](https://img.shields.io/badge/technology-Python-blue.svg)  ![technology JavaScript](https://img.shields.io/badge/technology-JavaScript-orange.svg) 
+![technology Python](https://img.shields.io/badge/technology-Python-blue.svg)  ![technology JavaScript](https://img.shields.io/badge/technology-JavaScript-orange.svg) ![technology MachineLearning](https://img.shields.io/badge/technology-MachineLearning-green.svg) 
 
 Este repositório contem a implementação de um **sistema de busca multimodal**, projetado para simular um mecanismo avançado de busca de produtos em um e-commerce fictício utilizando texto, imagens, ou a combinação de ambos. O sistema permite realizar consultas eficientes, proporcionando uma experiência mais interativa.  
 
@@ -8,12 +8,14 @@ Este repositório contem a implementação de um **sistema de busca multimodal**
 ![Architecture](documentation/architecture-embedding.png)
 
 ### Componentes da Arquitetura
-| **Componente**        | **Descrição**                                                    |
-|-----------------------|------------------------------------------------------------------|
-| product-search-web    | Interface usada por usuários de e-commerce consultar os produtos |
-| product-search-api    | Backend responsável por buscar produtos                          |
-| multimodal-search-api | TODO                                                             |
-| multimodal-indexer    | TODO                                                             |
+| **Componente**        | **Descrição**                                                                                         |
+|-----------------------|-------------------------------------------------------------------------------------------------------|
+| product-search-web    | Interface usada por usuários de e-commerce consultar os produtos                                      |
+| product-search-api    | Backend responsável por buscar produtos                                                               |
+| multimodal-search-api | A partir de um texto e/ou imagem, buscar por itens similares na base de dados vetorial                |
+| multimodal-indexer    | Job usado para ler o dataset (csv e imagens), gerar o embedding e inseri-lo na base de dados vetorial |
+| Postgres              | Armazena todos os dados dos produtos como: nome, URL da image, categoria e outras características     |
+| Milvus                | Armazena o embedding (vetor) de cada produto, juntamente com seu respectivo ID                        |
 
 ### Tecnologias Utilizadas
 | **Categoria**         | **Ferramenta/Descrição**                                                                                              |
