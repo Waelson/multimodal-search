@@ -8,14 +8,14 @@ Este repositório contem a implementação de um **sistema de busca multimodal**
 ![Architecture](documentation/architecture-embedding.png)
 
 ### Componentes
-| **Componente**        | **Descrição**                                                                                         |
-|-----------------------|-------------------------------------------------------------------------------------------------------|
-| product-search-web    | Interface usada por usuários do e-commerce para consultar os produtos                                 |
-| product-search-api    | Backend responsável por buscar produtos                                                               |
-| multimodal-search-api | A partir de um texto e/ou imagem, buscar por itens similares na base de dados vetorial                |
-| multimodal-indexer    | Job usado para ler o dataset (csv e imagens), gerar o embedding e inseri-lo na base de dados vetorial |
-| Postgres              | Armazena todos os dados dos produtos como: nome, URL da image, categoria e outras características     |
-| Milvus                | Armazena o embedding (vetor) de cada produto, juntamente com seu respectivo ID                        |
+| **Componente**           | **Descrição**                                                                                          |
+|---------------------------|------------------------------------------------------------------------------------------------------|
+| **product-search-web**    | Interface web voltada para os usuários do e-commerce, permitindo a consulta de produtos disponíveis. |
+| **product-search-api**    | Backend responsável por realizar as buscas de produtos, integrando-se às bases de dados necessárias. |
+| **multimodal-search-api** | Serviço que permite buscar itens similares na base de dados vetorial a partir de texto, imagem ou ambos. |
+| **multimodal-indexer**    | Job responsável por processar o dataset (CSV e imagens), gerar embeddings para os produtos e armazená-los no banco vetorial. |
+| **Postgres**              | Banco de dados relacional que armazena informações detalhadas sobre os produtos, como nome, URL da imagem, categoria e atributos adicionais. |
+| **Milvus**                | Banco de dados vetorial utilizado para armazenar os embeddings (vetores) dos produtos e seus respectivos IDs, otimizando buscas por similaridade. |
 
 ### Tecnologias
 | **Categoria**         | **Ferramenta/Descrição**                                                                                              |
