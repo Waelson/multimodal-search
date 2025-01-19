@@ -26,7 +26,7 @@ Este repositório contem a implementação de um **sistema de busca multimodal**
 | **Dataset**            | [E-commerce Product Images](https://www.kaggle.com/datasets/vikashrajluhaniwal/fashion-images) (disponível no Kaggle) |
 
 
-### Instalação
+## Instalação
 
 A aplicação está configurada para ser executada com Docker Compose. Siga os seguintes passos:
 
