@@ -2,6 +2,18 @@ version: '3.5'
 
 services:
 
+  attu:
+    container_name: attu
+    image: zilliz/attu:v2.2.8
+    environment:
+      MILVUS_URL: standalone:19530
+    ports:
+      - "8000:3000"
+    depends_on:
+      - "standalone"
+    networks:
+      - data-network
+
   product-search-web:
     build:
       context: ./projects/product-search-web
