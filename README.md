@@ -63,7 +63,7 @@ source my-venv/bin/activate
 - Instala as dependências
 
 ```bash
-pip install -r requirements.txt
+pip install -r _requirements.txt
 ```
 
 - Executa o processo de indexação do dataset

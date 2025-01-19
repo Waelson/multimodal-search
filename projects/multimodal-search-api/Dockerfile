@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Instalar as dependências
-RUN pip install --no-cache-dir -r requirements.txt --log install_log.txt | tee install_log.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Expor a porta usada pela aplicação
 EXPOSE 5001
