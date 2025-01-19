@@ -10,7 +10,7 @@ Este repositório contem a implementação de um **sistema de busca multimodal**
 ### Componentes da Arquitetura
 | **Componente**        | **Descrição**                                                                                         |
 |-----------------------|-------------------------------------------------------------------------------------------------------|
-| product-search-web    | Interface usada por usuários de e-commerce consultar os produtos                                      |
+| product-search-web    | Interface usada por usuários do e-commerce para consultar os produtos                                 |
 | product-search-api    | Backend responsável por buscar produtos                                                               |
 | multimodal-search-api | A partir de um texto e/ou imagem, buscar por itens similares na base de dados vetorial                |
 | multimodal-indexer    | Job usado para ler o dataset (csv e imagens), gerar o embedding e inseri-lo na base de dados vetorial |
