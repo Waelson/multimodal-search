@@ -28,6 +28,10 @@ Este repositório contem a implementação de um **sistema de busca multimodal**
 
 A aplicação está configurada para ser executada com Docker Compose. Siga os seguintes passos:
 
+Pré-requisitos:
+- Python 3.11 ou superior
+- Node 20.12 ou superior (para executar projeto localmente)
+
 1. **Clone o repositório**
 
 ```bash
@@ -42,6 +46,24 @@ docker-compose up --build
 ```
 
 3. **Indexação do dataset e imagens**
+- Cria um Virtual Environment do Python
+
+```bash
+python -m venv my-venv
+```
+
+- Ativa o Virtual Environment
+
+```bash
+source my-venv/bin/activate
+```
+- Instala as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+- Executa o processo de indexação do dataset
 
 ```bash
 cd projects/multimodal-indexer
