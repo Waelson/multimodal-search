@@ -83,10 +83,10 @@ python app.py
    
 ## Teoria
 
-### O que é busca multimodal?
+### Busca multimodal: o que é?
 São buscas que combinam diferentes tipos de dados (ou "modalidades") para encontrar resultados. Por exemplo, você pode buscar com uma imagem e um texto ao mesmo tempo, ou usar áudio e vídeo como entrada para encontrar conteúdos relacionados.
 
-### Que tipos de problema resolve?
+### Quais tipos de problemas ela ajuda a resolver?
 
 1. **E-Commerce**
    - **Busca de produtos por imagem e texto:**
@@ -101,9 +101,9 @@ São buscas que combinam diferentes tipos de dados (ou "modalidades") para encon
       - Estudantes podem combinar texto (ex.: "Teoria da Relatividade") com gráficos ou diagramas, encontrando explicações que relacionam ambas as modalidades.
 
 
-## Como o Vector Database pode nos ajudar?
+### Vector Database
 
-### O que são Vector Databases?
+#### O que são e para que servem?
 
 É um tipo de banco de dados projetado para armazenar e buscar vetores de alta dimensão, que são representações numéricas geradas por algoritmos de aprendizado de máquina. Esses vetores capturam características semânticas de dados complexos, como textos, imagens, áudios ou vídeos.
 
@@ -111,3 +111,22 @@ Os vetores são armazenados no banco e podem ser consultados com base em similar
 - Similaridade de cosseno
 - Distância Euclidiana
 - Distância de Manhattan
+
+### Embeddings 
+
+#### O que são?
+
+Imagine que você quer comparar diferentes frutas. Cada fruta tem características como "doçura", "acidez" e "tamanho". Se quisermos representar essas características com números, podemos fazer algo assim:
+
+- Maçã: `[7, 3, 5]` (doçura: 7, acidez: 3, tamanho: 5)
+- Laranja: `[5, 8, 4]` (doçura: 5, acidez: 8, tamanho: 4)
+- Banana: `[9, 2, 6]` (doçura: 9, acidez: 2, tamanho: 6)
+
+Agora, temos uma representação numérica (um vetor) que descreve cada fruta. Isso é parecido com o que embeddings fazem: transformam algo complicado em uma lista de números que o computador entende.
+
+#### Para que servem?
+
+Eles ajudam a comparar e encontrar semelhanças entre coisas. Por exemplo:
+
+- Mesmo que você descreva uma maçã em palavras diferentes ("uma fruta doce e crocante"), o computador pode entender que você está falando da mesma coisa.
+- No caso de imagens, um embedding pode ajudar a identificar que duas fotos diferentes mostram o mesmo cachorro.
