@@ -43,7 +43,9 @@ cd multimodal-search
 ```
 
 2. **Inicializa a stack**
-
+> **Atençao:** 
+> - O processo de construção da imagem da aplicação `multimodal-search-api` pode levar MUITO tempo.
+> - O servidor web da aplicação `multimodal-search-api` também leva um tempo para inicializar. Portanto, antes de executar a aplicação certifique-se de que o servidor HTTP já esteja inicializado
 ```bash
 docker-compose up --build
 ```
@@ -63,7 +65,7 @@ source my-venv/bin/activate
 - Instala as dependências
 
 ```bash
-pip install -r _requirements.txt
+pip install -r requirements.txt
 ```
 
 - Executa o processo de indexação do dataset
